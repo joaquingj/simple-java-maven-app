@@ -24,10 +24,10 @@ pipeline {
                 powershell '.\\jenkins\\scripts\\deliverW.ps1'
             }
         }        
-        /*stage('Complete') {
+        stage('Complete') {
             steps {
                 echo 'Job Complete!'
             }
-        }*/
+        }
     }
 }
