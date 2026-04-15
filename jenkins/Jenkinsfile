@@ -21,9 +21,9 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat './jenkins/scripts/deliver.sh'
+                powershell '.\\jenkins\\scripts\\deliverW.ps1'
             }
-        }
+        }        
         /*stage('Complete') {
             steps {
                 echo 'Job Complete!'
